@@ -4,6 +4,12 @@ on: # GE workflow will be triggered
   push:
     branches:
       - "master"
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Give a message
+        required: true
+        default: Random message
   
 jobs:
   job1:
@@ -29,5 +35,7 @@ jobs:
       - name: First Step
         run: write-output "Hello world"
         shell: pwsh
-        
+
+
+
 
