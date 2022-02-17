@@ -1,0 +1,14 @@
+name: Event Workflow # optional
+
+on: # GE workflow will be triggered
+  push:
+    branches:
+      - "master"
+  
+jobs:
+  job1:
+    name: First job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Custom 1
+        run: echo "Hello world!"
