@@ -4,6 +4,9 @@ on: # GE workflow will be triggered
   push:
     branches:
       - "master"
+  pull_request:
+    branches:
+      - "master"
   workflow_dispatch:
     inputs:
       message:
