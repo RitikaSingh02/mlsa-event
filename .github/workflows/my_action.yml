@@ -43,5 +43,17 @@ jobs:
       - name : Printing what the workflow_dispatch event is having
         run: echo "${{github.event.inputs.message}}"
 
+  job6:
+    name: Python dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Installing Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Printing the python env    
+        run: pip list
 
 
