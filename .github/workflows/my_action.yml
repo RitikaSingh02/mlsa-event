@@ -11,4 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Custom 1
-        run: echo "Hello world!"
+        run: |
+          sudo apt update
+          sudo apt list --installed
