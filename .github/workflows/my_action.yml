@@ -14,3 +14,10 @@ jobs:
         run: |
           sudo apt update
           sudo apt list --installed
+      - name: Trying with the ubuntu runner
+        run: |
+          pwd
+          mkdir random
+          cd random
+          touch random.txt
+          pwd
