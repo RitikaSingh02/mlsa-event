@@ -55,5 +55,12 @@ jobs:
           python-version: 3.9
       - name: Printing the python env    
         run: pip list
+      
+      - name: Installing Flake8
+        run: pip install flake8
+      
+      - name: Python env
+        run: pip list
+
 
 
