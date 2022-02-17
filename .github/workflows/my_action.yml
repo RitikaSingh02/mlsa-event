@@ -36,6 +36,12 @@ jobs:
         run: write-output "Hello world"
         shell: pwsh
 
+  job3:
+    name: Third job
+    runs-on: ubuntu-latest
+    steps:
+      - name : Printing what the workflow_dispatch event is having
+        run: echo "${{github.event.inputs.message}}"
 
 
 
