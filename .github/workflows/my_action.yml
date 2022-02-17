@@ -21,3 +21,11 @@ jobs:
           cd random
           touch random.txt
           pwd
+  
+  job2:
+    name: Second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: write-output "Hello world"
+        
