@@ -28,4 +28,6 @@ jobs:
     steps:
       - name: First Step
         run: write-output "Hello world"
+        shell: pwsh
         
+
